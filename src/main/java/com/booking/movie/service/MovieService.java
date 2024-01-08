@@ -26,13 +26,15 @@ public class MovieService {
         return movieList;
     }
 
-    public List<Movie> getMoviesByGener() {
-        moviesList = new ArrayList<>();
+    public List<Movie> getMoviesByGener(String genre) throws ParseException {
+        moviesList = buildMovie();
+        moviesList = moviesList.stream().filter(m->m.getGenre().equalsIgnoreCase(genre)).collect(Collectors.toList());
         return moviesList;
     }
 
-    public List<Movie> getMoviesByLanguage() {
-        moviesList = new ArrayList<>();
+    public List<Movie> getMoviesByLanguage(String language) throws ParseException {
+        moviesList = buildMovie();
+        moviesList = moviesList.stream().filter(m->m.getLanguage().equalsIgnoreCase(language)).collect(Collectors.toList());
         return moviesList;
     }
 

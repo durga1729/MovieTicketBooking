@@ -24,15 +24,15 @@ public class MovieController {
         return ResponseEntity.ok(moviesByCity);
     }
 
-    @GetMapping("/getMoviesByGener")
-    public ResponseEntity<List<Movie>> getMoviesListByGener() {
-        List<Movie> moviesByGener = new ArrayList<>();
-        return ResponseEntity.ok(moviesByGener);
+    @GetMapping("/getMoviesByGenre/{genre}")
+    public ResponseEntity<List<Movie>> getMoviesListByGener(@PathVariable String genre) throws ParseException {
+        List<Movie> moviesByGenre = movieService.getMoviesByGener(genre);
+        return ResponseEntity.ok(moviesByGenre);
     }
 
-    @GetMapping("/getMoviesByLanguage")
-    public ResponseEntity<List<Movie>> getMoviesListByLanguage() {
-        List<Movie> moviesByLanguage = new ArrayList<>();
+    @GetMapping("/getMoviesByLanguage/{language}")
+    public ResponseEntity<List<Movie>> getMoviesListByLanguage(@PathVariable String language) throws ParseException {
+        List<Movie> moviesByLanguage = movieService.getMoviesByLanguage(language);
         return ResponseEntity.ok(moviesByLanguage);
     }
 
