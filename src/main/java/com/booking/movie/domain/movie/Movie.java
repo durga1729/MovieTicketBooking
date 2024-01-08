@@ -1,11 +1,10 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.movie;
 
+import com.booking.movie.domain.booking.City;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

@@ -1,5 +1,7 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.movie;
 
+import com.booking.movie.domain.person.Address;
+import com.booking.movie.domain.booking.CinemaHall;
 import lombok.Getter;
 import lombok.Setter;
 

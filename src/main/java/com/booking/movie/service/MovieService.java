@@ -1,6 +1,11 @@
 package com.booking.movie.service;
 
-import com.booking.movie.domain.*;
+import com.booking.movie.domain.booking.*;
+import com.booking.movie.domain.movie.Cast;
+import com.booking.movie.domain.movie.Crew;
+import com.booking.movie.domain.movie.Movie;
+import com.booking.movie.domain.movie.Votes;
+import com.booking.movie.domain.person.Address;
 import com.booking.movie.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

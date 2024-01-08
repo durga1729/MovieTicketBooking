@@ -1,6 +1,6 @@
 package com.booking.movie.controller;
 
-import com.booking.movie.domain.Movie;
+import com.booking.movie.domain.movie.Movie;
 import com.booking.movie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

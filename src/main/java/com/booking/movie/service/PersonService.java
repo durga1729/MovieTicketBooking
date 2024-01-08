@@ -1,6 +1,6 @@
 package com.booking.movie.service;
 
-import com.booking.movie.domain.Person;
+import com.booking.movie.domain.person.Person;
 import org.springframework.stereotype.Service;
 
 @Service

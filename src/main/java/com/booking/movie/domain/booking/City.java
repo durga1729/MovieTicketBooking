@@ -1,11 +1,9 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.booking;
 
+import com.booking.movie.domain.booking.CinemaHall;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.HashMap;
-import java.util.List;
 
 @Getter
 @Setter

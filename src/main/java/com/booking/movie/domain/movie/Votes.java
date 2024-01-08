@@ -1,4 +1,4 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.movie;
 
 import lombok.Builder;
 import lombok.Getter;

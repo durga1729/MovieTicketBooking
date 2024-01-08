@@ -1,12 +1,10 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.booking;
 
-import com.booking.movie.util.DateUtil;
+import com.booking.movie.domain.person.Address;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.text.ParseException;
 import java.util.List;
 
 @Getter

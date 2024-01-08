@@ -1,4 +1,4 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.person;
 
 import lombok.Getter;
 import lombok.Setter;

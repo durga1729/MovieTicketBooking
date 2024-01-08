@@ -1,4 +1,4 @@
-package com.booking.movie.domain;
+package com.booking.movie.domain.booking;
 
 public enum SeatType {
     REGULAR, PREMIUM, ACCESSIBLE, EMERGENCY
