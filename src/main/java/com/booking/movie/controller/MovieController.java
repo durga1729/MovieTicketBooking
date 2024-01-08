@@ -19,19 +19,19 @@ public class MovieController {
     MovieService movieService;
 
     @GetMapping("/getMoviesByCity/{cityName}")
-    public ResponseEntity<List<Movie>> getMoviesListByCity(@PathVariable String cityName) throws ParseException {
+    public ResponseEntity<List<Movie>> getMoviesListByCity(@PathVariable String cityName) {
         List<Movie> moviesByCity = movieService.getMoviesByCity(cityName);
         return ResponseEntity.ok(moviesByCity);
     }
 
     @GetMapping("/getMoviesByGenre/{genre}")
-    public ResponseEntity<List<Movie>> getMoviesListByGener(@PathVariable String genre) throws ParseException {
+    public ResponseEntity<List<Movie>> getMoviesListByGener(@PathVariable String genre) {
         List<Movie> moviesByGenre = movieService.getMoviesByGener(genre);
         return ResponseEntity.ok(moviesByGenre);
     }
 
     @GetMapping("/getMoviesByLanguage/{language}")
-    public ResponseEntity<List<Movie>> getMoviesListByLanguage(@PathVariable String language) throws ParseException {
+    public ResponseEntity<List<Movie>> getMoviesListByLanguage(@PathVariable String language) {
         List<Movie> moviesByLanguage = movieService.getMoviesByLanguage(language);
         return ResponseEntity.ok(moviesByLanguage);
     }
