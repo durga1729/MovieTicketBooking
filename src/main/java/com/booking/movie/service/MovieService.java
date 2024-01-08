@@ -18,11 +18,11 @@ public class MovieService {
     DateUtil dateUtil;
 
     public List<Movie> getMoviesByCity(String cityName) {
-        List<Movie> movieList = buildMovie();
-        movieList = movieList.stream()
+        moviesList = buildMovie();
+        moviesList = moviesList.stream()
                 .filter(movie -> movie.getCities().stream()
                         .anyMatch(city -> city.getName().equalsIgnoreCase(cityName))).collect(Collectors.toList());
-        return movieList;
+        return moviesList;
     }
 
     public List<Movie> getMoviesByGener(String genre) {
