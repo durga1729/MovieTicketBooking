@@ -1,18 +1,13 @@
 package com.booking.movie.domain;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashMap;
-import java.util.List;
-
 @Getter
 @Setter
-@Builder
-public class City {
+public class Cinema {
     String name;
-    String state;
-    String zipcode;
+    int totalCinemaHalls;
+    Address address;
     CinemaHall cinemaHall;
 }
